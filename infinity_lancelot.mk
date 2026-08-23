@@ -12,9 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lancelot
+# Infinity-X specific flags
+INFINITY_MAINTAINER := "ム゜ARCHDEUSメ"
+TARGET_HAS_UDFPS := false
+WITH_GAPPS := false
+
+PRODUCT_NAME := infinity_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
