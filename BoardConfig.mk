@@ -25,7 +25,7 @@ ODM_MANIFEST_GALAHAD_FILES := $(DEVICE_PATH)/manifest_galahad.xml
 TARGET_KERNEL_CONFIG += vendor/lancelot.config
 
 # Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
 
 # Inherit the proprietary files
 include vendor/xiaomi/lancelot/BoardConfigVendor.mk
